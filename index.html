@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salida Atlética Inca Inca</title>
+    <link rel="stylesheet" href="ccss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra superior con información -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-info">
+                <div class="info-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>18 de agosto de 2025</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(324)xxx xx xx</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Santa Marta, Colombia</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabecera con logo y menú -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>SALIDA ATLÉTICA<br><span>INCA INCA</span></h1>
+                
+            </div>
+            <nav class="main-nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu">
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#recorrido">RECORRIDO</a></li>
+                    <li><a href="#evento">SOBRE EL EVENTO</a></li>
+                    <li><a href="#preguntas">PREGUNTAS FRECUENTES</a></li>
+                    <li><a href="#contacto">CONTÁCTANOS</a></li>
+                </ul>
+            </nav>
+            <a href="#inscripcion" class="btn-inscripcion">INSCRIPCIONES</a>
+        </div>
+    </header>
+
+    <!-- Sección Hero con video de fondo -->
+    <section id="inicio" class="hero">
+        <div class="video-container">
+            <video autoplay muted loop id="bg-video">
+                <source src="mp4/Sin título.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>SALIDA ATLÉTICA</h1>
+            <h2>INCA INCA</h2>
+            <p>UNA EXPERIENCIA ÚNICA EN LAS ALTURAS</p>
+            <div class="hero-buttons">
+                <a href="#inscripcion" class="btn btn-primary">INSCRIPCIONES</a>
+                <a href="#contacto" class="btn btn-secondary">CONTÁCTANOS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contador de tiempo restante -->
+    <section class="countdown-section">
+        <div class="container">
+            <h2>Tiempo Restante</h2>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <div class="countdown-value" id="days">00</div>
+                    <div class="countdown-label">DÍAS</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="hours">00</div>
+                    <div class="countdown-label">HORAS</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="minutes">00</div>
+                    <div class="countdown-label">MINUTOS</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="seconds">00</div>
+                    <div class="countdown-label">SEGUNDOS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección de información del evento -->
+    <section id="evento" class="event-info">
+        <div class="container">
+            <div class="section-header">
+                <h3>CORRE A TRAVÉS DE LA HISTORIA</h3>
+                <h2>CUSCO <span>CIUDAD IMPERIAL</span></h2>
+            </div>
+            <div class="info-blocks">
+                <div class="info-block" data-aos="fade-up">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Recorrido Histórico</h3>
+                    <p>Corre por las calles históricas de Cusco, pasando por monumentos incas y coloniales en una experiencia única.</p>
+                </div>
+                <div class="info-block" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-medal"></i>
+                    <h3>Premios Especiales</h3>
+                    <p>Grandes premios para los ganadores y medallas conmemorativas para todos los participantes.</p>
+                </div>
+                <div class="info-block" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-users"></i>
+                    <h3>Comunidad Atlética</h3>
+                    <p>Únete a cientos de corredores en esta celebración del deporte y la cultura inca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de recorrido -->
+    <section id="recorrido" class="route-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>RECORRIDO</h2>
+                <p>Conoce el trayecto que recorrerás durante la competencia</p>
+            </div>
+            <div class="route-info">
+                <div class="route-map" data-aos="fade-right">
+                    <div class="map-placeholder">
+                        <!-- Aquí iría un mapa real -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.6193348837105!2d-74.23603032410549!3d11.215775050934473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef45f691730b3f9%3A0x638a02df805e6990!2sPlaya%20Inca%20Inca!5e0!3m2!1ses!2sco!4v1743177129357!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="route-details" data-aos="fade-left">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-flag-checkered"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3>Punto de Partida</h3>
+                            <p>Plaza de Armas de Cusco, 7:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3>Distancia</h3>
+                            <p>10K por el centro histórico</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3>Dificultad</h3>
+                            <p>Moderada, con algunas pendientes</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3>Puntos de Hidratación</h3>
+                            <p>5 puntos a lo largo del recorrido</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de inscripción -->
+    <section id="inscripcion" class="registration-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>INSCRIPCIONES</h2>
+                <p>Asegura tu lugar en este evento único</p>
+            </div>
+            <div class="registration-options">
+                <div class="registration-card" data-aos="flip-left">
+                    <div class="card-header">
+                        <h3>Inscripción Básica</h3>
+                        <div class="price">$30</div>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Número de corredor</li>
+                            <li><i class="fas fa-check"></i> Chip de cronometraje</li>
+                            <li><i class="fas fa-check"></i> Camiseta oficial</li>
+                            <li><i class="fas fa-check"></i> Medalla de finalista</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">INSCRIBIRME</a>
+                    </div>
+                </div>
+                <div class="registration-card featured" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card-header">
+                        <h3>Inscripción Premium</h3>
+                        <div class="price">$50</div>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Todo lo de inscripción básica</li>
+                            <li><i class="fas fa-check"></i> Gorra conmemorativa</li>
+                            <li><i class="fas fa-check"></i> Mochila oficial</li>
+                            <li><i class="fas fa-check"></i> Acceso a zona VIP</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">INSCRIBIRME</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de preguntas frecuentes -->
+    <section id="preguntas" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>PREGUNTAS FRECUENTES</h2>
+                <p>Resolvemos tus dudas sobre el evento</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>¿Cuál es la fecha límite para inscribirse?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Las inscripciones estarán abiertas hasta el 10 de agosto de 2025 o hasta agotar cupos.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3>¿Dónde puedo recoger mi kit de corredor?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La entrega de kits se realizará los días 15 y 16 de agosto en el Centro de Convenciones de Cusco, de 10:00 AM a 8:00 PM.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>¿Habrá categorías por edad?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, contaremos con categorías por edad: 18-29, 30-39, 40-49, 50-59 y 60+ años, tanto para hombres como para mujeres.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3>¿Qué ocurre en caso de lluvia?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El evento se realizará con lluvia ligera. En caso de condiciones climáticas extremas, se notificará a los participantes sobre posibles cambios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>CONTÁCTANOS</h2>
+                <p>Estamos aquí para resolver todas tus dudas</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Av. El Sol 123, Cusco, Perú</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>(324) 703-3456</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@salidaatleticaincainca.com</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h3>Síguenos</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">ENVIAR MENSAJE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>SALIDA ATLÉTICA<br><span>INCA INCA</span></h2>
+                    <p>Una experiencia única en las alturas de Cusco</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#recorrido">Recorrido</a></li>
+                        <li><a href="#evento">Sobre el Evento</a></li>
+                        <li><a href="#inscripcion">Inscripciones</a></li>
+                        <li><a href="#preguntas">Preguntas Frecuentes</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe las últimas noticias sobre el evento</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Salida Atlética Inca Inca. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de volver arriba -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js.js"></script>
+</body>
+</html>
