@@ -1,7 +1,7 @@
 /* Estilos generales */
 :root {
-    --primary-color: #7b1fa2;
-    --secondary-color: #00bcd4;
+    --primary-color: #55a453;
+    --secondary-color:#28a745;
     --dark-color: #333;
     --light-color: #f4f4f4;
     --white-color: #fff;
@@ -69,7 +69,8 @@ img {
 }
 
 .btn-primary:hover {
-    background-color: #6a1b9a;
+    background-color: var(--white-color);
+    color: var(--primary-color);
 }
 
 .btn-secondary {
@@ -312,7 +313,7 @@ img {
 /* Contador */
 .countdown-section {
     
-    background-image: url(img/fondolineas.jpg);
+    background-color:#eee;
     height: 350px;
     padding: 80px 0;
     position: relative;
@@ -326,14 +327,14 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    
 }
 
 .countdown-section .container {
     position: relative;
     z-index: 1;
     text-align: center;
-    color: var(--white-color);
+    color:#ddd;
     
 }
 
@@ -355,8 +356,13 @@ img {
     padding: 20px;
     min-width: 150px;
 }
+.tiempo{
+    color: var(--dark-color);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
 .countdown-item:hover{
-    transform: translateY(-10px);
+    transform: translateY(-15px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 .countdown-value {
@@ -436,6 +442,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    
 }
 
 .route-map {
@@ -447,7 +454,7 @@ img {
     width: 100%;
     height: 400px;
     background-color: #eee;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -486,7 +493,7 @@ img {
 /* Sección de inscripción */
 .registration-section {
     padding: 100px 0;
-    background-color: var(--white-color);
+    background-color: var(--white-colo  );
 }
 
 .registration-options {
@@ -499,7 +506,7 @@ img {
 .registration-card {
     flex: 1;
     max-width: 350px;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -519,7 +526,7 @@ img {
 }
 
 .card-header {
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     color: var(--white-color);
     padding: 20px;
     text-align: center;
@@ -542,6 +549,7 @@ img {
 .card-body {
     padding: 30px;
     background-color: var(--white-color);
+    color: var(--dark-color);
 }
 
 .card-body ul {
@@ -552,11 +560,13 @@ img {
     margin-bottom: 15px;
     display: flex;
     align-items: center;
+    
 }
 
 .card-body li i {
-    color: var(--success-color);
-    margin-right: 10px;
+    color: var(--dark-color);
+    margin: 10px
+    
 }
 
 .card-body .btn {

@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Contador de tiempo restante
-    const countdownDate = new Date('April 18, 2025 07:00:00').getTime();
+    const countdownDate = new Date('April 20, 2025 07:00:00').getTime();
     
     function updateCountdown() {
         const now = new Date().getTime();
