@@ -312,7 +312,7 @@ img {
 /* Contador */
 .countdown-section {
     
-    
+    background-image: url(img/fondolineas.jpg);
     height: 350px;
     padding: 80px 0;
     position: relative;
@@ -1003,5 +1003,46 @@ img {
     .footer-newsletter button {
         border-radius: 4px;
         padding: 12px;
+    }
+}
+/* Estilos generales para la sección de inscripción */
+.registration-section .registration-options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.registration-card {
+    flex: 1 1 calc(50% - 20px); /* Dos tarjetas por fila en pantallas más grandes */
+    max-width: 400px;
+    margin: 10px;
+}
+
+/* Media query para pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+    .registration-section .registration-options {
+        flex-direction: column; /* Cambiar a una sola columna */
+        align-items: center;
+    }
+
+    .registration-card {
+        flex: 1 1 100%; /* Ocupa todo el ancho disponible */
+        max-width: 90%; /* Margen lateral para evitar que toque los bordes */
+    }
+
+    .registration-card .card-header {
+        text-align: center; /* Centrar el texto */
+    }
+
+    .registration-card .card-body ul {
+        padding-left: 0; /* Eliminar sangría en listas */
+        text-align: center; /* Centrar los elementos de la lista */
+    }
+
+    .registration-card .btn {
+        display: block;
+        width: 100%; /* Botón ocupa todo el ancho */
+        margin-top: 10px;
     }
 }
