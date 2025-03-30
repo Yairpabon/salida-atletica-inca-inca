@@ -15,6 +15,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+.patrocinador{
+    padding: 10px;
+    margin: 20px;
+    
+    
+}
+.logo-patrocinador{
+    padding:10px;
+    margin: 20px;
+}
 
 html {
     scroll-behavior: smooth;
