@@ -22,8 +22,8 @@
     
 }
 .logo-power{
-    padding:5px;
-    margin: 1px;
+    padding:0px;
+    margin: 0px;
 }
 .logo-patrocinador{
   display: block;
@@ -297,6 +297,7 @@ img {
     z-index: 1;
     max-width: 800px;
     padding: 0 20px;
+    height: 600px;
 }
 
 .hero-content h1 {
