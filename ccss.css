@@ -18,12 +18,17 @@
 .patrocinador{
     padding: 10px;
     margin: 20px;
-    
+
     
 }
+.logo-power{
+    padding:5px;
+    margin: 1px;
+}
 .logo-patrocinador{
-    padding:10px;
-    margin: 20px;
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
 }
 
 html {
