@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
     track.innerHTML += track.innerHTML; // Duplica los logos para efecto continuo
 });
 document.addEventListener("DOMContentLoaded", function () {
-    const text = "ORGANIZADO POR LA LIGA DEL MAGDALENA";
+    const text = "ORGANIZADO POR LA LIGA DE ATLETISMO DEL MAGDALENA";
     const typewriterElement = document.getElementById("typewriter");
 
     if (!typewriterElement) return; // Si no encuentra el elemento, no ejecuta nada.
