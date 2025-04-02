@@ -83,8 +83,9 @@
         width: 150px;
         max-height: 100px;
     }
-    .maquina {
+    .typewriter {
         font-size: 30px;
+        white-space: nowrap;
     }
 }
 
@@ -95,7 +96,18 @@
         max-height: 80px;
     }
     .maquina {
-        font-size: 26px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        background: linear-gradient(90deg, #55A453, #87D68D);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: normal; /* Permite que el texto se divida */
+        word-break: break-word;
+        width: 80%; /* Ajusta el ancho del texto */
+        max-width: 600px;
+        margin: 20px auto;
+        animation: blink 0.7s infinite;
     }
 }
 
@@ -106,14 +118,49 @@
         max-height: 70px;
     }
     .maquina {
-        font-size: 18px; /* Ajusta el tamaño del texto */
+        font-size: 5px;
+        font-weight: bold;
         text-align: center;
-        white-space: normal; /* Permite que el texto se divida en varias líneas */
-        word-break: break-word; /* Rompe el texto si es necesario */
-        max-width: 90%; /* Ajusta el ancho para mejorar la visibilidad */
-        margin: auto;
+        background: linear-gradient(90deg, #55A453, #87D68D);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: normal; /* Permite el salto de línea */
+        word-break: break-word; /* Rompe palabras largas si es necesario */
+        width: 90%; /* Ajusta el ancho para móviles */
+        max-width: 320px;
+        margin: 20px auto;
+        animation: blink 0.7s infinite;
     }
     .carousel {
         max-width: 100%;
+    }
+}
+
+/* Cursor parpadeante */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+@media screen and (max-width: 1023px) {
+    .hero-buttons {
+        flex-direction: column; /* Hace que los botones se apilen en pantallas medianas */
+        align-items: center;
+    }
+    .btn {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+/* Para móviles */
+@media screen and (max-width: 767px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        width: 90%; /* Ocupa el 90% del ancho en móviles */
+        max-width: 300px;
+        font-size: 16px; /* Reduce el tamaño del texto */
+        padding: 10px 15px;
     }
 }
