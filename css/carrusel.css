@@ -1,0 +1,119 @@
+.sponsors {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sponsors h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Carrusel Responsive */
+.carousel {
+    overflow: hidden;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+}
+
+.carousel img {
+    width: 120px;
+    height: auto;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+/* Grid de patrocinadores (fallback si el carrusel no carga) */
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.sponsor-grid img {
+    width: 80%;
+    max-width: 120px;
+    height: auto;
+}
+
+/* Efecto máquina de escribir con degradado */
+.typewriter {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #55A453, #87D68D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    width: fit-content;
+    margin: 20px auto;
+    animation: blink 0.7s infinite;
+}
+
+/* Cursor parpadeante */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Animación del carrusel */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ----- RESPONSIVE DESIGN ----- */
+
+/* Para pantallas grandes (PC) */
+@media screen and (min-width: 1024px) {
+    .carousel img {
+        width: 150px;
+        max-height: 100px;
+    }
+    .maquina {
+        font-size: 30px;
+    }
+}
+
+/* Para tablets */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .carousel img {
+        width: 120px;
+        max-height: 80px;
+    }
+    .maquina {
+        font-size: 26px;
+    }
+}
+
+/* Para móviles */
+@media screen and (max-width: 767px) {
+    .carousel img {
+        width: 100px;
+        max-height: 70px;
+    }
+    .maquina {
+        font-size: 18px; /* Ajusta el tamaño del texto */
+        text-align: center;
+        white-space: normal; /* Permite que el texto se divida en varias líneas */
+        word-break: break-word; /* Rompe el texto si es necesario */
+        max-width: 90%; /* Ajusta el ancho para mejorar la visibilidad */
+        margin: auto;
+    }
+    .carousel {
+        max-width: 100%;
+    }
+}

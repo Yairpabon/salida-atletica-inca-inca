@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salida Atlética Inca Inca</title>
-    <link rel="icon" href="img/LOGO LIGA CON FONFO.png">
-    <link rel="stylesheet" href="ccss.css">
+    <link rel="icon" href="img/LOGO_LIGA_CON_FONFO-removebg-preview.png">
+    <link rel="stylesheet" href="./css/ccss.css">
+    <link rel="stylesheet" href="css/carrusel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -36,39 +37,41 @@
     </header>
 
     <!-- Sección Hero con video de fondo -->
-    <section id="inicio" class="hero">
-        <div class="video-container">
-            <video autoplay loop id="bg-video">
-                <source src="mp4/Sin título.mp4" type="video/mp4">
-            </video>
-            <div class="overlay"></div>
+<section id="inicio" class="hero">
+    <div class="video-container">
+        <div class="overlay"></div>
+    </div>
+    <div class="hero-content">
+        <h1>SALIDA ATLÉTICA</h1>
+        <h2>INCA INCA</h2>
+        <p>UNA EXPERIENCIA ÚNICA EN LAS ALTURAS</p>
+        <div class="hero-buttons">
+            <a href="https://welcu.com/liga-de-atletismo-del-magdalena/salida-atletica-inca-inca" target="_blank" class="btn btn-primary">INSCRIPCIONES</a>
+            <a href="" target="_blank" class="btn btn-secondary">CONTÁCTANOS</a>
         </div>
-        <div class="hero-content">
-            <h1>SALIDA ATLÉTICA</h1>
-            <h2>INCA INCA</h2>
-            <p>UNA EXPERIENCIA ÚNICA EN LAS ALTURAS</p>
-            <div class="hero-buttons">
-                <a href="https://welcu.com/liga-de-atletismo-del-magdalena/salida-atletica-inca-inca" target="_blank" class="btn btn-primary">INSCRIPCIONES</a>
-                <a href="" target="_blank" class="btn btn-secondary">CONTÁCTANOS</a>
-            </div>
-            
-            <section class="sponsors-section">
-                <h2 class="sponsors-title">PATROCINADORES OFICIALES</h2>
-                <div class="sponsors-container">
-                    <div class="sponsor-logo">
-                        <img src="img/interdeporte blanco.png" alt="Patrocinador 1" class="logo-patrocinador">
-                    </div>
-                    <div class="sponsor-logo">
-                        <img src="img/image-removebg-preview.png" alt="Interdeporte" class="interdeporte">
-                    </div>
-                    <div class="sponsor-logo">
-                        <img src="img/Logo_power_-removebg-preview.png" alt="Power" class="logo-power">
-                    </div>
-                </div>
-            </section>
 
-        </div>
-    </section>
+        <!-- Título con efecto máquina de escribir -->
+        <h2 id="typewriter" class="maquina"></h2>
+
+
+        <!-- Sección de patrocinadores -->
+        <section class="sponsors">
+            <h2>Nuestros Patrocinadores</h2>
+            
+            <!-- Carrusel de patrocinadores -->
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="img/ELECTROLIT.png" alt="Patrocinador 1">
+                    <img src="img/ENERGY AZUL.png" alt="Patrocinador 2">
+                    <img src="img/INDEPORTE.png" alt="Patrocinador 3">
+                    <img src="img/HABITAT AZUL.png" alt="Patrocinador 4">
+                    <img src="img/POWER.png" alt="Patrocinador 5">
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
 
     <!-- Contador de tiempo restante -->
     <section class="countdown-section">
@@ -372,6 +375,6 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <script src="js.js"></script>
+    <script src="JS/js.js"></script>
 </body>
 </html>
