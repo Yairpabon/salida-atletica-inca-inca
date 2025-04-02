@@ -140,27 +140,47 @@
 @keyframes blink {
     50% { border-color: transparent; }
 }
+/* ----- RESPONSIVE DESIGN ----- */
+
+/* Para tablets */
 @media screen and (max-width: 1023px) {
-    .hero-buttons {
-        flex-direction: column; /* Hace que los botones se apilen en pantallas medianas */
-        align-items: center;
+    h1 {
+        font-size: 36px;
     }
-    .btn {
-        width: 80%;
-        max-width: 400px;
+    h2 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 18px;
     }
 }
 
 /* Para móviles */
 @media screen and (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+    .hero-content {
+        text-align: center; /* Centrar el texto en móviles */
+        padding: 10px;
+    }
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
+
     .btn {
-        width: 90%; /* Ocupa el 90% del ancho en móviles */
+        width: 90%;
         max-width: 300px;
-        font-size: 16px; /* Reduce el tamaño del texto */
+        font-size: 16px;
         padding: 10px 15px;
     }
 }
