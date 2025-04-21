@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - SALIDA ATLETICA INCA INCA</title>
+    <link rel="icon" href="../img/LOGO_LIGA_CON_FONFO-removebg-preview.png">
+    <link rel="stylesheet" href="CSS.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>SALIDA ATLETICA INCA INCA</h1>
+        </div>
+        <div class="header-banner">
+            <h2>RESULTADOS OFICIALES</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="number" id="dorsalSearch" placeholder="Buscar por número de dorsal">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+            <button id="resetButton">Mostrar todos</button>
+        </div>
+
+        <div class="table-container">
+            <table id="runnersTable">
+                <thead>
+                    <tr>
+                        <th>Puesto</th>
+                        <th>Dorsal</th>
+                        <th>Nombre Completo</th>
+                        <th>Tiempo</th>
+                        <th>GAP</th>
+                    </tr>
+                </thead>
+                <tbody id="runnersTableBody">
+                    <!-- La tabla se llenará con JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SALIDA ATLETICA INCA INCA - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="JS.JS"></script>
+</body>
+</html>
