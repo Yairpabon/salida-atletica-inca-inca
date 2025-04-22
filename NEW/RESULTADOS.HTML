@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados Oficiales - Atletismo</title>
+    <link rel="stylesheet" href="CSS.CSS">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="tabs">
+                <a href="#" class="tab active" data-tab="results">RESULTADOS</a>
+                <a href="#" class="tab" data-tab="participants">PARTICIPANTES</a>
+                <!-- <a href="../galeria.html" class="tad" data-tab="gallery">GALERÍA</a> -->
+               
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar por nombre o dorsal...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="language-selector">
+                <button></button>
+            </div>
+        </nav>
+        <div class="notification-banner">
+            ¡Resultados Oficiales!
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección de Resultados -->
+        <section id="results-section" class="tab-content active">
+            <div class="category-header">
+                <div class="category-selector">
+                    <h2>Tiempos <span id="current-category"></span> <i class="fas fa-chevron-down"></i></h2>
+                    <div class="category-icon">
+                        <i class="fas fa-female"></i><i class="fas fa-female"></i>
+                    </div>
+                </div>
+                <div class="filter-options">
+                    <div class="gender-filter">
+                        <button class="filter-btn active" data-gender="all">Todos</button>
+                        <button class="filter-btn" data-gender="F">Mujeres</button>
+                        <button class="filter-btn" data-gender="M">Hombres</button>
+                    </div>
+                </div>
+                <!--
+                <div class="export-options">
+                    <button class="export-btn" title="Exportar a Excel"><span>XLS</span></button>
+                    <button class="export-btn" title="Imprimir"><i class="fas fa-print"></i></button>
+                    <button class="export-btn" title="Configurar columnas"><i class="fas fa-columns"></i></button>
+                    <button class="export-btn" title="Vista de tabla"><i class="fas fa-table"></i></button>
+                    <button class="export-btn" title="Más opciones"><i class="fas fa-ellipsis-v"></i></button>
+                </div>
+                -->
+            </div>
+
+            <div class="classification-counter">
+                <div class="category-label">WOMEN</div>
+                <div class="counter"><span id="classified-count">28</span> / <span id="total-count">33</span> CLASIFICADOS</div>
+            </div>
+
+            <div class="results-table-container">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th class="position-col">Pl.</th>
+                            <th class="dorsal-col"> Dorsal</th>
+                            <th class="name-col"> Nombre</th>
+                            <th class="club-col"> Club</th>
+                            <th class="gender-col"> Sx</th>
+                            <th class="time-col">⏱ Tiempo</th>
+                            <th class="gap-col">➕ Gap</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results-body">
+                        <!-- Tabla generada dinámicamente con JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination">
+                <button class="pagination-btn" id="prev-page" disabled><i class="fas fa-chevron-left"></i> Anterior</button>
+                <div class="page-indicator">Página <span id="current-page">1</span> de <span id="total-pages">3</span></div>
+                <button class="pagination-btn" id="next-page">Siguiente <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Sección de Participantes -->
+        <section id="participants-section" class="tab-content">
+            <div class="category-header">
+                <div class="category-selector">
+                    <h2>PARTICIPANTES <i class="fas fa-chevron-down"></i></h2>
+                </div>
+                <div class="filter-options">
+                    <div class="gender-filter">
+                        <button class="filter-btn active" data-gender="all">Todos</button>
+                        <button class="filter-btn" data-gender="F">Mujeres</button>
+                        <button class="filter-btn" data-gender="M">Hombres</button>
+                    </div>
+                </div>
+                <div class="export-options">
+                    <button class="export-btn" title="Exportar a Excel"><span>XLS</span></button>
+                    <button class="export-btn" title="Imprimir"><i class="fas fa-print"></i></button>
+                </div>
+            </div>
+
+            <div class="participants-grid" id="participants-grid">
+                <!-- Participantes generados dinámicamente con JavaScript -->
+            </div>
+
+            <div class="pagination">
+                <button class="pagination-btn" id="participants-prev-page" disabled><i class="fas fa-chevron-left"></i> Anterior</button>
+                <div class="page-indicator">Página <span id="participants-current-page">1</span> de <span id="participants-total-pages">3</span></div>
+                <button class="pagination-btn" id="participants-next-page">Siguiente <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        
+    <!-- Modal para detalles del competidor -->
+    <div class="modal" id="competitor-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <div class="competitor-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="competitor-info">
+                    <h2 id="modal-name">Nombre del Competidor</h2>
+                    <p>Dorsal: <span id="modal-dorsal">123</span></p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-stopwatch"></i></div>
+                        <div class="stat-value" id="modal-time">00:00:00</div>
+                        <div class="stat-label">Tiempo</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="stat-value" id="modal-position">0</div>
+                        <div class="stat-label">Posición</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-running"></i></div>
+                        <div class="stat-value" id="modal-pace">0:00 min/km</div>
+                        <div class="stat-label">Ritmo</div>
+                    </div>
+
+                </div>
+                <div class="details-container">
+                    <div class="detail-row">
+                        <div class="detail-label">Club:</div>
+                        <div class="detail-value" id="modal-club">Nombre del Club</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Categoría:</div>
+                        <div class="detail-value" id="modal-category">Senior Femenino</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Edad:</div>
+                        <div class="detail-value" id="modal-age">30</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Ciudad:</div>
+                        <div class="detail-value" id="modal-city">Ciudad</div>
+                    </div>
+                </div>
+                <!--
+                <div class="certificate-container">
+                    <button id="download-certificate" class="certificate-btn">
+                        <i class="fas fa-certificate"></i> Descargar Certificado
+                    </button>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./javascrip.js"></script>
+</body>
+
+</html>

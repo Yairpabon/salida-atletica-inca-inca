@@ -783,8 +783,8 @@ img {
 
 /* Footer */
 .footer {
-    background-color: var(--dark-color);
-    color: var(--white-color);
+    background-color: white;
+    color: var(--dark-color-color);
     padding: 80px 0 20px;
 }
 
@@ -807,7 +807,7 @@ img {
 }
 
 .footer-logo span {
-    color: var(--primary-color);
+    color: var(--dark-color-color);
 }
 
 .footer-links {
@@ -831,7 +831,7 @@ img {
     left: 0;
     width: 50px;
     height: 2px;
-    background-color: var(--primary-color);
+    background-color: (var--dark-color-color);
 }
 
 .footer-links ul li {
@@ -839,7 +839,7 @@ img {
 }
 
 .footer-links ul li a {
-    color: #bbb;
+    color:black;
     transition: all 0.3s ease;
 }
 
@@ -849,6 +849,7 @@ img {
 }
 
 .footer-newsletter {
+    color: black;
     flex: 2;
     min-width: 300px;
 }
@@ -871,7 +872,7 @@ img {
 }
 
 .footer-newsletter button {
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
     color: var(--white-color);
     border: none;
     padding: 0 20px;
